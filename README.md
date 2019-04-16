@@ -4,9 +4,9 @@
 - DISCLAIMER: This is in no way or form official and should not be viewed as representing Arch Linux
 ```
 
-<aside class="notice">
-You must replace `meowmeowmeow`.
-</aside>
+<div>
+<aside class="notice">You must replace `meowmeowmeow`.</aside>
+</div>
 
 #### Currently supported
  * pytorch
