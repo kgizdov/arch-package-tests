@@ -3,9 +3,12 @@
 ```diff
 - DISCLAIMER: This is in no way or form official and should not be viewed as representing Arch Linux
 ```
-
+<style
+  type="text/css">
+p {color:red;}
+</style>
 <div>
-<aside class="notice">You must replace `meowmeowmeow`.</aside>
+<p>You must replace `meowmeowmeow`.</p>
 </div>
 
 #### Currently supported
