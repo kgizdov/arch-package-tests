@@ -8,6 +8,8 @@
    - C++ API
  * tensorflow
    - C++ API
+   - Python API
+   - Keras API
 
 #### Running the tests
 ```bash
