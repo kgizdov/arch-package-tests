@@ -1,4 +1,4 @@
-SUBDIRS = pytorch/ATan pytorch/autograd tensorflow/basic tensorflow/python
+SUBDIRS = pytorch/ATan pytorch/autograd pytorch/python tensorflow/basic tensorflow/python
 SUBDIRSCLEAN = $(addsuffix .clean,$(SUBDIRS))
 
 .PHONY: all subdirs $(SUBDIRS) $(SUBDIRSCLEAN) message clean

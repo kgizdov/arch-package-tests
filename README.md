@@ -6,6 +6,7 @@
 #### Currently supported
  * pytorch
    - C++ API
+   - Python API
  * tensorflow
    - C++ API
    - Python API
