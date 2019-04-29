@@ -11,6 +11,8 @@
    - C++ API
    - Python API
    - Keras API
+ * cuDNN
+   - C++ API
 
 #### Running the tests
 ```bash
