@@ -1,9 +1,11 @@
 CXX=g++
-INCL_DIRS=-I/usr/include/torch/csrc/api/include -I/usr/include/python3.7m
+PYVER=$(shell python -c "import sys;t='{v[0]}.{v[1]}'.format(v=list(sys.version_info[:2]));sys.stdout.write(t)")
+USRINCLD=/usr/include
+INCL_DIRS=-I$(USRINCLD)/torch/csrc/api/include -I$(USRINCLD)/python$(PYVER) -I$(USRINCLD)/python$(PYVER)m
 comm=$(shell ls /opt/cuda/lib 2>&1 >/dev/null; echo $$?)
 ifeq ($(comm), 0)
 LIB_DIRS=-L/usr/lib/pytorch -L/opt/cuda/lib
-LIBS=-lc10 -ltorch -lcaffe2 -lnvrtc -lcuda
+LIBS=-lc10 -ltorch -lnvrtc -lcuda
 else
 LIB_DIRS=-L/usr/lib/pytorch
 LIBS=-lc10 -ltorch -lcaffe2
